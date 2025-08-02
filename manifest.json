@@ -1,0 +1,18 @@
+
+{
+  "manifest_version": 3,
+  "name": "Content Detox",
+  "version": "1.1",
+  "description": "Hide Shorts, comments, and recommendations on YouTube with toggle.",
+  "permissions": ["storage"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Toggle Content Detox"
+  }
+}
